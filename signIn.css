@@ -1,0 +1,42 @@
+.main-container{
+    display:flex;
+    flex-direction:column;
+    width:25%;
+    background-color: antiquewhite;
+    align-items: center;
+    padding:2rem;
+    border-radius: 2rem;;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    width:70%;
+}
+body{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:flex; justify-content: center; align-items: center; height:100vh;
+}
+button{
+    border:none; height:1.5rem;
+}
+label{
+    height:1.5rem; background-color: grey; color:white; padding:0.5rem 1rem; border-radius:0.5rem;
+}
+form input{
+    margin:0.2rem; height:2rem; border:grey; border-radius: 0.5rem;;
+} 
+h1{margin: 0.5rem 0; color:#81633a;}
+span{height:2rem; color:#c89150}
+
+.options>#sign-in:checked ~ #form-sign-in {
+    display:block;
+}
+.options>#sign-in:not(:checked) ~ #form-sign-in {
+    display:none;
+}
+
+.options>#sign-up:not(:checked) ~ #form-sign-up{
+    display:none;
+}
+.options>#sign-up:checked ~ #form-sign-up{
+    display:block;
+}

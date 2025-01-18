@@ -1,12 +1,13 @@
 body{
-    background-color: rgb(224, 217, 203);
+    margin:0;
+    background-color: rgb(224 217 203 / 16%);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .navbar{
     display:flex;
     justify-content: space-between;
     width:100%;
-    background-color: rgba(179, 179, 179, 0.744);
+    background-color: rgb(181 163 128);
     align-items: center;
 }
 .navbar div ul{
@@ -20,13 +21,45 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0 20px 0 20px;
     transition: color 0.5s ease-in-out;
+    color:white;
+    cursor:pointer;
 }
 .navbar div ul li:hover{
     color:rgb(148, 96, 0);
 }
+button{background-color: rgb(127 112 89);color:white;border:none;padding:15px;}
 main{
-    width:70%;
-    margin:auto;
     display: flex;
     flex-direction: column;
+}
+section{height:500px;}
+section div{flex-direction: column;
+    display:flex; align-items: center;
+}
+#section-1{
+    background-color:#dbcb41;
+}
+#section-4{color:white;
+    background-color: rgb(50, 50, 50);
+}
+#section-1 h1{color:white;}
+
+
+/*table*/
+th{
+    background-color: rgb(229, 62, 62);
+    color: white    ;
+}
+td,th{border: 1px solid rgb(208, 208, 208); padding:1rem;}
+table{
+    border: 1px solid rgb(229, 62, 62) !important;border-collapse: collapse;
+    animation: move 0.7s ease-out infinite alternate; 
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
 }
